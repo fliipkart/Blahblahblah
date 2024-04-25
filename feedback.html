@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hacked</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #333;
+      overflow-x: hidden;
+      transition: width 0.3s ease;
+      padding-top: 60px;
+      box-shadow: 1px 3px 4.5px grey;
+    }
+
+    .sidebar-link {
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #fff;
+      font-family: 'Times New Roman', Times, serif;
+      display: block;
+      border-bottom: 1px solid #555;
+      transition: background-color 0.3s ease;
+    }
+
+    .sidebar-link:last-child {
+      border-bottom: none;
+    }
+
+    .sidebar-link:hover {
+      background-color: #555;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+      color: #fff;
+      border: none;
+      background: transparent;
+      transition: color 0.3s ease-in;
+    }
+
+    .close-btn:hover {
+      color: grey;
+      box-shadow: 2px 2px 5px;
+      border-radius: 3px;
+    }
+
+    .menu-btn {
+      position: fixed;
+      top: 15px;
+      left: 20px;
+      font-size: 23px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      transition: transform 0.3s ease-in;
+      color: white;
+    }
+
+    .menu-btn:hover {
+      transform: scale(1.1);
+    }
+    
+    .img{
+      width: 50px;
+      height: 50px;
+      border-radius: 360%;
+      margin-top: -60px;
+      margin-left: 5px;
+      
+    }
+    
+    .header{
+      width: 100%;
+      height: 60px;
+      background-color: grey;
+      padding-top: 5px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 15px;
+      box-shadow: 2px 1px 5px grey;
+    }
+    
+    /* Account section styles */
+    .account-section {
+      position: absolute;
+      bottom: 50px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      background-color: #444;
+      box-shadow: -2px -2px 5px grey;
+    }
+
+    
+
+    .account-section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .account-section ul li {
+      margin-bottom: 10px;
+      margin-right: 150px;
+    }
+
+    .account-section ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .account-section ul li a:hover {
+      color: #aaa;
+    }
+    #profile{
+      padding-right: 100px;
+
+    }
+    
+    h1{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .report-container{
+    width: 363px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 610.5px;
+    display: flex;
+    text-align: center;
+    margin-left: -3px;
+    margin-top: 0px;
+    
+  }
+  .input-email{
+    width: 294px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: -15px;
+    margin-left: 0px;
+    font-family: 'Times New Roman', Times, serif;o
+  }
+  #report{
+    margin-left: 0px;
+    margin-top: 10px;
+    resize: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif
+    
+  }
+  #btn-report{
+    background-color: white;
+    padding: 6px 25px 6px 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  #btn-report:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: green;
+  }
+  
+
+    
+  </style>
+</head>
+<body>
+
+<div class="sidebar" id="mySidebar">
+  <img class="img" src="/Anonymous Wallpaper HD for Iphone.jpeg">
+  
+  <button class="close-btn" onclick="closeSidebar()">&times;</button>
+  
+  
+  <a href="/niyaz.html" class="sidebar-link">Home</a>
+  <a href="#" class="sidebar-link" >Applications
+  <a href="#" class="sidebar-link" >Commands</a>
+    <a href="/tools.html" class="sidebar-link" >Tools</a>
+  <a href="#" class="sidebar-link" >Gadgets</a>
+
+  <a style="color: red;" href="#" class="sidebar-link">Hacking</a>
+    <a style="color: red" href="#" class="sidebar-link">Darkweb</a>
+  <a href="/feedback.html" class="sidebar-link">Feedback</a>
+
+    
+  
+  <!-- Account section -->
+  <div class="account-section">
+    
+    <ul>
+      <li id="profile"><a href="#">Profile</a></li>
+      <li id="profile"><a href="/settings.html">Settings</a></li>
+    
+    </ul>
+    <h1 
+      style="font-size: 10px;
+      padding-right: 50px;
+      color: white;
+      cursor: auto;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-decoration: none"
+    ><a href="#" style="color: inherit; text-decoration: none; font-family: 'Times New Roman', Times, serif;">HACK3R © 2024</h1></a>
+    
+  </div>
+  
+</div>
+
+<div class="content" id="mainContent">
+  <button class="menu-btn" id="menuBtn">&#9776;</button>
+  <div class="header">
+     <h2
+  style="text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+    ">Feedback</h2>
+  
+</div>
+
+</div>
+ 
+   
+  <div class="report-container">
+    
+  
+ <form action="">
+   <h2
+   style="font-size: 20px;
+   font-family: 'Times New Roman', Times, serif; color: white"
+   
+   >Write you're Feedback</h2>
+   <input type="email" class="input-email" name="email" placeholder="E-mail" required>
+   
+   <textarea name="message" id="report" cols="33" rows="8" placeholder="message" required></textarea>
+   
+   <button type="submit" id="btn-report">submit</button>
+  
+   
+    <h2
+ style="font-size: 15px;
+   padding-top: 290px;
+   font-size: 12px; 
+   color: white;
+   cursor: auto;
+   font-family: 'Times New Roman', Times, serif;
+   text-decoration: none;">
+      <a href="#" style="color: inherit; text-decoration: none; font-family: 'Times New Roman', Times, serif;">HACK3R © 2024</h2></a>
+ </form>
+
+
+</div>
+
+
+<script>
+  var sidebarOpened = false;
+  var startX;
+  var touchEndX;
+  var menuBtn = document.getElementById("menuBtn");
+
+  document.addEventListener('touchstart', touchStart, false);
+  document.addEventListener('touchmove', touchMove, false);
+  document.addEventListener('touchend', touchEnd, false);
+
+  function touchStart(event) {
+    startX = event.touches[0].clientX;
+  }
+
+  function touchMove(event) {
+    touchEndX = event.touches[0].clientX;
+  }
+
+  function touchEnd() {
+    var diff = touchEndX - startX;
+
+    if (diff > 50 && startX < 60) { // Open sidebar only if swiped from left edge and not near the menu button
+      openSidebar();
+    } else if (diff < -50) {
+      closeSidebar();
+    }
+  }
+
+  function openSidebar() {
+    document.getElementById("mySidebar").style.width = "260px";
+    sidebarOpened = true;
+  }
+
+  function closeSidebar() {
+    document.getElementById("mySidebar").style.width = "0";
+    sidebarOpened = false;
+  }
+
+  menuBtn.onclick = function() {
+    if (sidebarOpened) {
+      closeSidebar();
+    } else {
+      openSidebar();
+    }
+  };
+
+  function loadContent(page) {
+    document.getElementById("mainContent").innerHTML = "<h2>" + page.toUpperCase() + " Content</h2>";
+  }
+</script>
+     
+</body>
+</html>
